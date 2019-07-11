@@ -1,0 +1,32 @@
+---
+templates:
+    deploy_wordpress:
+        notes: Template for wordpress deploying
+        kind: Task
+        data:
+            vars: {}
+            playbook: deploy.yml
+            inventory: localhost,
+        options: {}
+templates_rewrite: false
+view:
+    fields:
+        wp_mysql_db:
+          title: MySQL DB name
+          default: wordpress
+          format: string
+          help: MySQL database name of your Worpress site
+        wp_mysql_user:
+            title: MySQL user
+            default: wordpress
+            format: string
+            help: MySQL user for database of your Worpress site
+        wp_mysql_password:
+            title: MySQL password
+            default: wordpress
+            format: string
+            help: MySQL password for database of your Worpress site
+    playbooks:
+        deploy.yml:
+            title: Deploy wordpress
+            help: Deploy wordpress for this inventory
