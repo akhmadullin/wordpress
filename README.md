@@ -19,7 +19,7 @@ selected inventory.
 
 Form of quick deployment
 ------------------------
-This project's form of quick deployment provides you with 2 fields:
+This project's form of quick deployment provides you with 3 fields:
 
 * **mysql db** - name of MySQL database of your Worpress site.
 * **mysql user** - name of MySQL user for database of your Worpress site.
